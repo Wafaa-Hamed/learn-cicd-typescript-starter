@@ -3,7 +3,6 @@ import { getAPIKey } from "../api/auth";
 import { IncomingHttpHeaders } from "http";
 
 describe("getAPIKey", () => {
-
   test("returns null if no Authorization header", () => {
     const headers: IncomingHttpHeaders = {};
     expect(getAPIKey(headers)).toBeNull();
@@ -29,6 +28,4 @@ describe("getAPIKey", () => {
     };
     expect(getAPIKey(headers)).toBeNull();
   });
-
 });
-
