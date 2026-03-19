@@ -24,4 +24,6 @@ jobs:
       - name: Build app
         run: npm run build
 
-     
+      - name: Deploy
+        run: |
+          gcloud builds submit --tag test-image .
