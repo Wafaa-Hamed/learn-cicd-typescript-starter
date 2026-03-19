@@ -24,7 +24,4 @@ jobs:
       - name: Build app
         run: npm run build
 
-      - name: Deploy (fake gcloud step)
-        run: |
-          echo "Simulating deployment"
-          gcloud builds submit --tag dummy-image .
+     
