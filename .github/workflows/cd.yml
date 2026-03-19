@@ -26,5 +26,4 @@ jobs:
 
       - name: Deploy
         run: |
-         echo "Deploy step"
-         gcloud builds submit --tag test-image .
+          echo "gcloud builds submit"
