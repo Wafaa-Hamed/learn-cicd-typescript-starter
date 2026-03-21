@@ -16,15 +16,6 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
 
-      
-
-      - name: Set up Cloud SDK
-        uses: google-github-actions/setup-gcloud@v2
-
-      - name: Set project
-        run: gcloud config set project notely-490800
-
-
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
